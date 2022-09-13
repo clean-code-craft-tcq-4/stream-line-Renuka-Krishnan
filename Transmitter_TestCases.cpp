@@ -11,5 +11,6 @@ TEST_CASE("Test to verify if the file is opened successfully")
 
 TEST_CASE("Test to display the data read from the file on the console") 
 {
- 
+  Modes TransmissionRequest = StartTransmit;
+  REQUIRE(PrintOnConsole(TransmissionRequest)== OK);
 }
