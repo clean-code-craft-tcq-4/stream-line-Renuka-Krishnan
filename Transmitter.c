@@ -3,7 +3,7 @@
 #include<math.h>
 #include "Transmitter.h"
 
-Ret_Access Return1,  Return2;
+Ret_Status Return1,  Return2;
 int BufferSize = 0;
 
 int BatteryTemp[]={};
