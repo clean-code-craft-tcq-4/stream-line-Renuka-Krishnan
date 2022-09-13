@@ -17,9 +17,9 @@ typedef enum
 } Modes;
 
 
-int BufferSize;
-int BatteryTemp[45];
-int BatterySoc[45];
+extern int BufferSize;
+extern int BatteryTemp[45];
+extern int BatterySoc[45];
 
 Ret_Status ReadSensorData();
 Ret_Status PrintOnConsole(Modes TransmissionRequest);
