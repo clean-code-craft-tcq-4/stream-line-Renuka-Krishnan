@@ -6,8 +6,8 @@
 Ret_Status Return1,  Return2;
 int BufferSize = 0;
 
-int BatteryTemp[]={};
-int BatterySoc[]={};
+int BatteryTemp[50]={0};
+int BatterySoc[50]={0};
    
 Ret_Status ReadSensorData()
 {
