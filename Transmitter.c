@@ -3,6 +3,9 @@
 #include<math.h>
 #include "Transmitter.h"
 Ret_Status Return1,  Return2; 
+int BufferSize;
+int BatteryTemp[45];
+int BatterySoc[45];
 Ret_Status ReadSensorData()
 {
   FILE *fp;
