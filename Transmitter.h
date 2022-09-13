@@ -10,6 +10,12 @@ typedef enum
   NOT_OK
 }Ret_Status;
 
+typedef enum 
+{
+  StopTransmit,
+  StartTransmit
+} Modes;
+
 
 Ret_Status ReadSensorData();
 
