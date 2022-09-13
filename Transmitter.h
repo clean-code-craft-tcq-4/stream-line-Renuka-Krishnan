@@ -16,7 +16,7 @@ typedef enum
   StartTransmit
 } Modes;
 
-Ret_Status Return1,  Return2;
+
 int BufferSize;
 int BatteryTemp[45];
 int BatterySoc[45];
