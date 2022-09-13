@@ -11,16 +11,16 @@ Ret_Status Return1,  Return2;
 Ret_Status ReadSensorData()
 {
   FILE *fp;
-  int Buffer = 1; 
+  int data = 1; 
   Return1=NOT_OK;   	
   fp = fopen("./BMS_Sensor_Data.txt", "r");
   
   if (fp != NULL)
   {
       int ReadTemp, ReadSoc, Index =0;
-      while(Buffer != EOF)
+      while(data != EOF)
       {
-       Buffer = fscanf(fp,"%d %d",&ReadTemp, &ReadSoc);
+       data = fscanf(fp,"%d %d",&ReadTemp, &ReadSoc);
        BatteryTemp[Index] =ReadTemp;   
        BatterySoc[Index]= ReadSoc;
        Index++;
