@@ -32,3 +32,17 @@ Ret_Status ReadSensorData()
  fclose(fp);
  return Return1;
 }
+
+Ret_Status PrintOnConsole(Modes TrasmissionRequest)
+{
+Return2 = NOT_OK;
+    if (TrasmissionRequest)
+      {
+       for(int i=0; i < BufferSize-1; i++)
+         {
+           printf("%d,%d\n", BatteryTemp[i],BatterySoc[i]);
+         }
+      Return2= OK;
+     }	
+return Return2;
+}
