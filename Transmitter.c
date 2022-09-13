@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<math.h>
 #include "Transmitter.h"
-   
+Ret_Status Return1,  Return2; 
 Ret_Status ReadSensorData()
 {
   FILE *fp;
