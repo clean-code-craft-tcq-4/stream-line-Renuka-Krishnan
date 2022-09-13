@@ -3,10 +3,13 @@
 #include<math.h>
 
 #define MAXIMUM_SENSOR_READINGS 50  
-Ret_Status ReadSensorData();
 
 typedef enum 
 {
   OK,
   NOT_OK
 }Ret_Status;
+
+
+Ret_Status ReadSensorData();
+
