@@ -6,7 +6,7 @@
 int BatteryTemp[MAXIMUM_SENSOR_READINGS];
 int BatterySoc[MAXIMUM_SENSOR_READINGS];
 Ret_Status Return1,  Return2;
-
+int BufferSize = 0;
 
 Ret_Status ReadSensorData()
 {
