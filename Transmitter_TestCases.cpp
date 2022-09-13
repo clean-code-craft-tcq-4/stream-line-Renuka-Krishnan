@@ -9,8 +9,14 @@ TEST_CASE("Test to verify if the file is opened successfully")
  REQUIRE_NOTHROW(ReadSensorData()== OK); 
 }
 
-TEST_CASE("Test to display the data read from the file on the console") 
+TEST_CASE("Test to print the data read from the file on the console") 
 {
   Modes TransmissionRequest = StartTransmit;
   REQUIRE(PrintOnConsole(TransmissionRequest)== OK);
+}
+
+TEST_CASE("Test to stop transmitting the data to be printed on the console") 
+{
+  Modes TransmissionRequest = StopTransmit;
+  REQUIRE(PrintOnConsole(TransmissionRequest)== NOT_OK);
 }
