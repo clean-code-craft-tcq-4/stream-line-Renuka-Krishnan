@@ -16,5 +16,6 @@ typedef enum
   StartTransmit
 } Modes;
 
+int BufferSize;
 Ret_Status ReadSensorData();
 Ret_Status PrintOnConsole(Modes TransmissionRequest);
