@@ -9,4 +9,4 @@ typedef enum
 {
   OK,
   NOT_OK
-};Ret_Status
+}Ret_Status;
