@@ -18,4 +18,4 @@ typedef enum
 
 
 Ret_Status ReadSensorData();
-
+Ret_Status PrintOnConsole(Modes TransmissionRequest);
