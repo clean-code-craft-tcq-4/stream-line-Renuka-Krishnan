@@ -16,10 +16,5 @@ typedef enum
   StartTransmit
 } Modes;
 
-
-extern int BufferSize;
-extern int BatteryTemp[45];
-extern int BatterySoc[45];
-
 Ret_Status ReadSensorData();
 Ret_Status PrintOnConsole(Modes TransmissionRequest);
