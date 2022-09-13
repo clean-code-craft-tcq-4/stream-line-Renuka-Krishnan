@@ -13,7 +13,7 @@ Ret_Status ReadSensorData()
 {
   FILE *fp;
   int Buffer = 1; 
-  Return1=NOK;   	
+  Return1=NOT_OK;   	
   fp = fopen("./BMS_Sensor_Data.txt", "r");
   
   if (fp != NULL)
