@@ -2,10 +2,12 @@
 #include<stdlib.h>
 #include<math.h>
 #include "Transmitter.h"
-Ret_Status Return1,  Return2; 
+
+int BatteryTemp[MAXIMUM_SENSOR_READINGS];
+int BatterySoc[MAXIMUM_SENSOR_READINGS];
+Ret_Status Return1,  Return2;
 int BufferSize;
-int BatteryTemp[45];
-int BatterySoc[45];
+
 Ret_Status ReadSensorData()
 {
   FILE *fp;
