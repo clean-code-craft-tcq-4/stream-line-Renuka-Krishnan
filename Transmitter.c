@@ -33,10 +33,10 @@ Ret_Status ReadSensorData()
  return Return1;
 }
 
-Ret_Status PrintOnConsole(Modes TrasmissionRequest)
+Ret_Status PrintOnConsole(Modes TransmissionRequest)
 {
 Return2 = NOT_OK;
-    if (TrasmissionRequest)
+    if (TransmissionRequest)
       {
        for(int i=0; i < BufferSize-1; i++)
          {
