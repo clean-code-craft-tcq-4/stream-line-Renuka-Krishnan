@@ -18,3 +18,4 @@ typedef enum
 
 Ret_Status ReadSensorData();
 Ret_Status PrintOnConsole(Modes TransmissionRequest);
+void calculate_battery_health(int bat_temp,int bat_soc,int counter);
