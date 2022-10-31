@@ -8,5 +8,13 @@ void calculate_battery_health(int bat_temp,int bat_soc,int counter)
 {
   battery_temperature[counter] = bat_temp;
   battery_state_of_charge[counter] = bat_soc;
-  printf("%d,%d\n", battery_temperature[counter],battery_state_of_charge[counter]);
+  if(battery_state_of_charge[counter] < 20)
+  {
+    if( battery_temperature[counter] > 50)
+    {
+      Printf("Battery is in bad condition= %d%d\n",battery_temperature[counter],battery_state_of_charge[counter]);
+ // printf("%d,%d\n", battery_temperature[counter],battery_state_of_charge[counter]);
+    }
+  }
+  
 }
