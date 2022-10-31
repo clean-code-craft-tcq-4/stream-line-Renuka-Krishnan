@@ -23,6 +23,7 @@ Ret_Status ReadSensorData()
        data = fscanf(fp,"%d %d",&ReadTemp, &ReadSoc);
        BatteryTemp[Index] =ReadTemp;   
        BatterySoc[Index]= ReadSoc;
+        calculate_battery_health(BatteryTemp,BatterySoc,Index);
        Index++;
       }
        BufferSize=Index;
