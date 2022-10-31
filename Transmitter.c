@@ -38,9 +38,9 @@ Ret_Status PrintOnConsole(Modes TransmissionRequest)
 Return2 = NOT_OK;
     if (TransmissionRequest)
       {
+      printf("All data from sensor\n");
        for(int i=0; i < BufferSize-1; i++)
          {
-         printf("All data from sensor\n");
            printf("%d,%d\n", BatteryTemp[i],BatterySoc[i]);
          }
       Return2= OK;
